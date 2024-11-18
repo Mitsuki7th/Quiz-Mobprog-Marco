@@ -12,14 +12,18 @@ class FontModel with ChangeNotifier {
   }
 
   static TextStyle fontA() {
-    return GoogleFonts.cinzel(); // Elegan dan klasik
+    return GoogleFonts.cinzel();
   }
 
   static TextStyle fontB() {
-    return GoogleFonts.permanentMarker(); // Tebal dan mencolok
+    return GoogleFonts.permanentMarker();
   }
 
   static TextStyle fontC() {
-    return GoogleFonts.pacifico(); // Kursif dan santai
+    return GoogleFonts.pacifico();
+  }
+
+  static TextStyle fontD() {
+    return GoogleFonts.roboto();
   }
 }

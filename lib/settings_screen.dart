@@ -13,7 +13,6 @@ class SettingsScreen extends StatelessWidget {
     final fontModel = Provider.of<FontModel>(context);
     final opacityModel = Provider.of<OpacityModel>(context);
 
-    // Get screen size
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -28,7 +27,8 @@ class SettingsScreen extends StatelessWidget {
           children: [
             Text(
               'Select Theme',
-              style: fontModel.currentFont.copyWith(fontSize: screenWidth * 0.05),
+              style:
+                  fontModel.currentFont.copyWith(fontSize: screenWidth * 0.05),
             ),
             const SizedBox(height: 10),
             Wrap(
@@ -52,7 +52,8 @@ class SettingsScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               'Select Font',
-              style: fontModel.currentFont.copyWith(fontSize: screenWidth * 0.05),
+              style:
+                  fontModel.currentFont.copyWith(fontSize: screenWidth * 0.05),
             ),
             const SizedBox(height: 8),
             Wrap(
@@ -76,7 +77,8 @@ class SettingsScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               'Adjust Image Opacity',
-              style: fontModel.currentFont.copyWith(fontSize: screenWidth * 0.05),
+              style:
+                  fontModel.currentFont.copyWith(fontSize: screenWidth * 0.05),
             ),
             const SizedBox(height: 10),
             Slider(
@@ -91,7 +93,8 @@ class SettingsScreen extends StatelessWidget {
             ),
             Text(
               'Opacity: ${(opacityModel.opacity * 100).toInt()}%',
-              style: fontModel.currentFont.copyWith(fontSize: screenWidth * 0.04),
+              style:
+                  fontModel.currentFont.copyWith(fontSize: screenWidth * 0.04),
             ),
           ],
         ),

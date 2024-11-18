@@ -12,8 +12,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeModel>(context).currentTheme;
     final font = Provider.of<FontModel>(context).currentFont;
-    final opacity =
-        Provider.of<OpacityModel>(context).opacity; // Mengambil nilai opacity
+    final opacity = Provider.of<OpacityModel>(context).opacity;
 
     return Scaffold(
       appBar: AppBar(
@@ -49,7 +48,6 @@ class MainScreen extends StatelessWidget {
                 ),
               ),
             ),
-            // Description card
             Card(
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               elevation: 5,
@@ -65,7 +63,7 @@ class MainScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      'This app allows you to switch between themes, fonts, and adjust image opacity dynamically. Explore the settings to choose your preferences.',
+                      'State Management Quiz pertermuan 6 dengan pergantian tema dan font untuk main screen',
                       style: font.copyWith(fontSize: 16),
                     ),
                   ],
@@ -79,7 +77,7 @@ class MainScreen extends StatelessWidget {
                 child: Opacity(
                   opacity: opacity,
                   child: Image.asset(
-                    'lib/gambar/halloween.png',
+                    'lib/gambar/labu.png',
                     width: double.infinity,
                     height: 200,
                     fit: BoxFit.cover,

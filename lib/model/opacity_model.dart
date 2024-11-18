@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class OpacityModel with ChangeNotifier {
-  double _opacity = 1.0; // Default opacity 100%
+  double _opacity = 1.0;
 
   double get opacity => _opacity;
 

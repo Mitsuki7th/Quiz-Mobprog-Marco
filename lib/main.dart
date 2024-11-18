@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'model/theme_model.dart';
 import 'model/font_model.dart';
-import 'model/opacity_model.dart'; // Tambahkan model opacity jika diperlukan
+import 'model/opacity_model.dart'; 
 import 'main_screen.dart';
 
 void main() {
@@ -11,7 +11,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => ThemeModel()),
         ChangeNotifierProvider(create: (_) => FontModel()),
-        ChangeNotifierProvider(create: (_) => OpacityModel()), // Jika digunakan
+        ChangeNotifierProvider(create: (_) => OpacityModel()),
       ],
       child: const MyApp(),
     ),
